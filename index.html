@@ -411,57 +411,6 @@
         }
         .footer-bottom a:hover { color: var(--accent-light); }
 
-        /* ── LEGAL PAGES (inline) ── */
-        .legal-page {
-            display: none;
-            position: fixed;
-            inset: 0;
-            z-index: 200;
-            background: var(--paper);
-            overflow-y: auto;
-            padding: 2rem;
-        }
-        .legal-page.active { display: block; }
-        .legal-inner {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 4rem 0;
-        }
-        .legal-inner h1 {
-            font-family: 'Instrument Serif', serif;
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-        }
-        .legal-inner .legal-date {
-            color: var(--muted);
-            font-size: 0.85rem;
-            margin-bottom: 2rem;
-        }
-        .legal-inner h2 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin: 2rem 0 0.75rem;
-        }
-        .legal-inner p, .legal-inner li {
-            color: var(--muted);
-            font-size: 0.92rem;
-            line-height: 1.7;
-            margin-bottom: 0.75rem;
-        }
-        .legal-inner ul { padding-left: 1.25rem; margin-bottom: 1rem; }
-        .legal-close {
-            position: fixed;
-            top: 1.5rem; right: 2rem;
-            z-index: 210;
-            background: var(--ink);
-            color: var(--paper);
-            border: none;
-            width: 40px; height: 40px;
-            border-radius: 50%;
-            font-size: 1.2rem;
-            cursor: pointer;
-            display: flex; align-items: center; justify-content: center;
-        }
 
         /* ── ANIMATIONS ── */
         @keyframes fadeUp {
@@ -628,7 +577,7 @@
                 <div class="consent-group">
                     <input type="checkbox" id="sms-consent" name="sms-consent">
                     <label for="sms-consent" class="consent-text">
-                        I agree to receive text messages from Anil Creates LLC regarding my inquiry and related services. Message and data rates may apply. Message frequency varies. Reply STOP to opt out at any time. Reply HELP for help. View our <a href="#" onclick="openLegal('privacy'); return false;">Privacy Policy</a> and <a href="#" onclick="openLegal('terms'); return false;">Terms of Service</a>.
+                        I agree to receive text messages from Anil Creates LLC regarding my inquiry and related services. Message and data rates may apply. Message frequency varies. Reply STOP to opt out at any time. Reply HELP for help. View our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.
                     </label>
                 </div>
 
@@ -662,8 +611,8 @@
             </div>
             <div class="footer-links-group">
                 <h4>Legal</h4>
-                <a href="#" onclick="openLegal('privacy'); return false;">Privacy Policy</a>
-                <a href="#" onclick="openLegal('terms'); return false;">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
             </div>
             <div class="footer-links-group">
                 <h4>Connect</h4>
@@ -673,132 +622,16 @@
         <div class="footer-bottom">
             <span>&copy; 2025 Anil Creates LLC. All rights reserved.</span>
             <div>
-                <a href="#" onclick="openLegal('privacy'); return false;">Privacy Policy</a>
-                <a href="#" onclick="openLegal('terms'); return false;">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
             </div>
         </div>
     </div>
 </footer>
 
-<!-- ─── PRIVACY POLICY ─── -->
-<div class="legal-page" id="privacy-page">
-    <button class="legal-close" onclick="closeLegal()">&times;</button>
-    <div class="legal-inner">
-        <h1>Privacy Policy</h1>
-        <p class="legal-date">Effective Date: January 1, 2025 &nbsp;|&nbsp; Last Updated: February 25, 2026</p>
 
-        <p>Anil Creates LLC ("we," "us," or "our") respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website anilcreatesugc.com or engage with our services.</p>
-
-        <h2>1. Information We Collect</h2>
-        <p>We may collect the following types of information:</p>
-        <ul>
-            <li><strong>Personal Information:</strong> Name, email address, phone number, company name, and job title when you submit a contact form or otherwise communicate with us.</li>
-            <li><strong>Usage Data:</strong> Information about how you access and use our website, including IP address, browser type, pages visited, and time spent on pages.</li>
-            <li><strong>Communications:</strong> Records of correspondence if you contact us, including via email, phone, or SMS text messages.</li>
-        </ul>
-
-        <h2>2. How We Use Your Information</h2>
-        <p>We use the information we collect to:</p>
-        <ul>
-            <li>Respond to your inquiries and provide our services</li>
-            <li>Send transactional communications related to your project or inquiry</li>
-            <li>Send marketing and promotional text messages, only if you have explicitly opted in</li>
-            <li>Improve our website and services</li>
-            <li>Comply with legal obligations</li>
-        </ul>
-
-        <h2>3. SMS/Text Messaging</h2>
-        <p>If you opt in to receive text messages from Anil Creates LLC, you consent to receive SMS messages related to your inquiry, project updates, and — if separately opted in — marketing communications. Message and data rates may apply. Message frequency varies. You may opt out at any time by replying STOP to any message. Reply HELP for assistance. We will not share your phone number with third parties for their marketing purposes. Consent to receive text messages is not a condition of purchasing any goods or services.</p>
-
-        <h2>4. Information Sharing</h2>
-        <p>We do not sell, trade, or rent your personal information to third parties. We may share information with trusted service providers who assist us in operating our business (e.g., email platforms, CRM software), subject to confidentiality obligations. We may also disclose information if required by law.</p>
-
-        <h2>5. Data Security</h2>
-        <p>We implement reasonable administrative, technical, and physical safeguards to protect your personal information. However, no method of transmission over the Internet or electronic storage is 100% secure.</p>
-
-        <h2>6. Cookies</h2>
-        <p>Our website may use cookies and similar tracking technologies to improve user experience and analyze website traffic. You can control cookie settings through your browser.</p>
-
-        <h2>7. Third-Party Links</h2>
-        <p>Our website may contain links to third-party sites. We are not responsible for the privacy practices of those sites and encourage you to review their privacy policies.</p>
-
-        <h2>8. Your Rights</h2>
-        <p>Depending on your jurisdiction, you may have the right to access, correct, delete, or restrict processing of your personal data. To exercise these rights, contact us at anil@anilcreates.com.</p>
-
-        <h2>9. Children's Privacy</h2>
-        <p>Our services are not directed to individuals under 18. We do not knowingly collect personal information from children.</p>
-
-        <h2>10. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date.</p>
-
-        <h2>11. Contact Us</h2>
-        <p>If you have questions about this Privacy Policy, please contact us:</p>
-        <p>Anil Creates LLC<br>Email: anil@anilcreates.com</p>
-    </div>
-</div>
-
-<!-- ─── TERMS OF SERVICE ─── -->
-<div class="legal-page" id="terms-page">
-    <button class="legal-close" onclick="closeLegal()">&times;</button>
-    <div class="legal-inner">
-        <h1>Terms of Service</h1>
-        <p class="legal-date">Effective Date: January 1, 2025 &nbsp;|&nbsp; Last Updated: February 25, 2026</p>
-
-        <p>Welcome to anilcreatesugc.com, operated by Anil Creates LLC ("we," "us," or "our"). By accessing or using our website and services, you agree to be bound by these Terms of Service ("Terms"). If you do not agree, please do not use our website.</p>
-
-        <h2>1. Services</h2>
-        <p>Anil Creates LLC provides user-generated content (UGC) creation services for businesses, including but not limited to video production, social media content, testimonial videos, and advertising creative. Specific deliverables, timelines, and pricing are agreed upon on a per-project basis.</p>
-
-        <h2>2. Use of Website</h2>
-        <p>You agree to use this website only for lawful purposes. You may not use this site in any way that could damage, disable, or impair the website or interfere with any other party's use of the website.</p>
-
-        <h2>3. Intellectual Property</h2>
-        <p>All content on this website, including text, graphics, logos, and images, is the property of Anil Creates LLC unless otherwise stated. Content produced for clients is subject to the terms of individual project agreements.</p>
-
-        <h2>4. Contact Form & Communications</h2>
-        <p>By submitting information through our contact form, you consent to being contacted by Anil Creates LLC via the email address and/or phone number you provide, for the purpose of responding to your inquiry. If you opt in to receive SMS text messages, you agree to the SMS terms outlined in our Privacy Policy.</p>
-
-        <h2>5. SMS Communications Terms</h2>
-        <p>By opting in to SMS communications from Anil Creates LLC, you agree to the following:</p>
-        <ul>
-            <li>You may receive text messages related to your inquiry, project status, and — if separately opted in — marketing promotions.</li>
-            <li>Message and data rates may apply depending on your mobile carrier and plan.</li>
-            <li>Message frequency varies based on your engagement and project activity.</li>
-            <li>You may opt out at any time by replying STOP.</li>
-            <li>For help, reply HELP or contact anil@anilcreates.com.</li>
-            <li>SMS consent is not required as a condition of purchasing any service.</li>
-            <li>We do not share your phone number with third parties for marketing purposes.</li>
-        </ul>
-
-        <h2>6. Disclaimer</h2>
-        <p>Our website and services are provided "as is" without warranties of any kind, either express or implied. We do not guarantee that the website will be uninterrupted, error-free, or free of viruses or other harmful components.</p>
-
-        <h2>7. Limitation of Liability</h2>
-        <p>To the fullest extent permitted by law, Anil Creates LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of or inability to use the website or services.</p>
-
-        <h2>8. Governing Law</h2>
-        <p>These Terms shall be governed by and construed in accordance with the laws of the State of New Jersey, without regard to its conflict of law provisions.</p>
-
-        <h2>9. Changes to Terms</h2>
-        <p>We reserve the right to modify these Terms at any time. Changes will be effective when posted on this page. Your continued use of the website constitutes acceptance of the modified Terms.</p>
-
-        <h2>10. Contact Us</h2>
-        <p>If you have questions about these Terms, please contact us:</p>
-        <p>Anil Creates LLC<br>Email: anil@anilcreates.com</p>
-    </div>
-</div>
 
 <script>
-    // Legal page open/close
-    function openLegal(type) {
-        document.getElementById(type + '-page').classList.add('active');
-        document.body.style.overflow = 'hidden';
-    }
-    function closeLegal() {
-        document.querySelectorAll('.legal-page').forEach(p => p.classList.remove('active'));
-        document.body.style.overflow = '';
-    }
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLegal(); });
 
     // Form submission handler
     function handleSubmit(e) {
